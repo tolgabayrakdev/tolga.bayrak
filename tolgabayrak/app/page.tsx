@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     title: "Tolga Bayrak - Yazılım Geliştirme Uzmanı",
     description: "Kurumsal dijital çözümler, SaaS platformları ve modern web uygulamaları geliştiriyorum.",
     type: "website",
-    url: "https://tolgabayrak.dev",
+    url: "https://tolgabayrak.vercel.app",
   },
 }
 

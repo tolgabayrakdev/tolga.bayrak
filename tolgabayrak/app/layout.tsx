@@ -22,13 +22,13 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "tr_TR",
-    url: "https://tolgabayrak.dev",
+    url: "https://tolgabayrak.vercel.app",
     title: "Tolga Bayrak - Yazılım Geliştirme Uzmanı",
     description: "Kurumsal dijital çözümler, SaaS platformları ve modern web uygulamaları geliştiriyorum.",
     siteName: "Tolga Bayrak",
     images: [
       {
-        url: "https://tolgabayrak.dev/og-image.jpg",
+        url: "https://tolgabayrak.vercel.app/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Tolga Bayrak - Yazılım Geliştirme Uzmanı",
@@ -71,8 +71,8 @@ export default function RootLayout({
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#0f172a" />
-        <link rel="canonical" href="https://tolgabayrak.dev" />
-        <meta name="google-site-verification" content="verification-code-here" />
+        <link rel="canonical" href="https://tolgabayrak.vercel.app" />
+        <meta name="google-site-verification" content="D5SxVqiZdr4kWJtqgdJMFXxmWBZcA1e1h2LqSnhAYIY" />
       </head>
       <body className={`font-sans antialiased`}>
         {children}
