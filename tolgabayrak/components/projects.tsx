@@ -62,14 +62,16 @@ const projects = [
 ]
 
 export function Projects() {
-  const { ref, inView } = useInView({ threshold: 0.3, triggerOnce: true })
+  const { ref, inView } = useInView({ threshold: 0.1, triggerOnce: true })
+  const { ref: headerRef, inView: headerInView } = useInView({ threshold: 0.1, triggerOnce: true })
 
   return (
     <section id="projects" className="py-20 px-6 border-t border-border">
       <div className="max-w-6xl mx-auto">
         <motion.div
+          ref={headerRef}
           initial={{ opacity: 0, y: 20 }}
-          animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+          animate={headerInView ? { opacity: 1, y: 0 } : { opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           className="mb-16"
         >
@@ -84,7 +86,7 @@ export function Projects() {
             <motion.div
               key={project.id}
               initial={{ opacity: 0, y: 20 }}
-              animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+              animate={inView ? { opacity: 1, y: 0 } : { opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: idx * 0.1 }}
               className="group bg-card border border-border rounded-lg overflow-hidden hover:border-primary/50 transition-all duration-300"
             >
