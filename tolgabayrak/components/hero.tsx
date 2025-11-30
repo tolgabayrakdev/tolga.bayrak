@@ -66,7 +66,7 @@ export function Hero() {
         >
           <div className="flex items-center gap-2">
             <Code2 size={18} className="text-accent" />
-            <span>8+ Yıl Deneyim</span>
+            <span>5+ Yıl Deneyim</span>
           </div>
           <div className="flex items-center gap-2">
             <Zap size={18} className="text-accent" />

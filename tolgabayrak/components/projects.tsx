@@ -75,7 +75,7 @@ export function Projects() {
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4">Başarı Projeleri</h2>
           <p className="text-lg text-muted-foreground">
-            Gerçek müşteriler için geliştirdiğim SaaS ve işletme yazılımları
+            5 yıllık deneyimim boyunca gerçek müşteriler için geliştirdiğim SaaS ve işletme yazılımları
           </p>
         </motion.div>
 
