@@ -2,23 +2,15 @@
 
 import { motion } from "framer-motion"
 import { useInView } from "react-intersection-observer"
-import { Mail, Phone, MapPin, Linkedin, Github, Twitter } from "lucide-react"
+import { Mail, Phone, MapPin } from "lucide-react"
 
 export function Contact() {
   const { ref, inView } = useInView({ threshold: 0.3, triggerOnce: true })
 
   const socials = [
-    { icon: Mail, label: "Email", value: "tolga@tolgabayrak.dev", href: "mailto:tolga@tolgabayrak.dev" },
-    { icon: Phone, label: "Telefon", value: "+90 (554) XXX-XXXX", href: "tel:+905541234567" },
+    { icon: Mail, label: "Email", value: "bayraktolga28@gmail.com", href: "mailto:bayraktolga28@gmail.com" },
+    { icon: Phone, label: "Telefon", value: "0537 985 44 87", href: "tel:+905379854487" },
     { icon: MapPin, label: "Konum", value: "Giresun, Türkiye", href: "#" },
-    {
-      icon: Linkedin,
-      label: "LinkedIn",
-      value: "linkedin.com/in/tolgabayrak",
-      href: "https://linkedin.com/in/tolgabayrak",
-    },
-    { icon: Github, label: "GitHub", value: "github.com/tolgabayrak", href: "https://github.com/tolgabayrak" },
-    { icon: Twitter, label: "Twitter", value: "@tolgabayrak", href: "https://twitter.com/tolgabayrak" },
   ]
 
   return (
@@ -39,7 +31,7 @@ export function Contact() {
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.5, delay: 0.1 }}
-          className="grid md:grid-cols-3 gap-6"
+          className="grid md:grid-cols-3 gap-6 max-w-2xl mx-auto"
         >
           {socials.map((social, idx) => {
             const Icon = social.icon

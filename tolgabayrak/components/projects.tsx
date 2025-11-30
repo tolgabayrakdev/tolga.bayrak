@@ -128,9 +128,37 @@ export function Projects() {
                 </div>
 
                 <div className="flex items-center justify-center">
-                  <div
-                    className={`w-full h-64 bg-gradient-to-br ${project.color} rounded-lg opacity-20 group-hover:opacity-30 transition-opacity`}
-                  ></div>
+                  <div className="w-full relative">
+                    {/* Browser Mockup */}
+                    <div className="bg-card border border-border rounded-lg overflow-hidden shadow-lg group-hover:shadow-xl transition-shadow">
+                      {/* Browser Header */}
+                      <div className="bg-muted border-b border-border px-4 py-2 flex items-center gap-2">
+                        <div className="flex gap-1.5">
+                          <div className="w-3 h-3 rounded-full bg-red-500/50"></div>
+                          <div className="w-3 h-3 rounded-full bg-yellow-500/50"></div>
+                          <div className="w-3 h-3 rounded-full bg-green-500/50"></div>
+                        </div>
+                        <div className="flex-1 bg-background border border-border rounded px-3 py-1 text-xs text-muted-foreground truncate ml-2">
+                          {project.url}
+                        </div>
+                      </div>
+                      {/* Site Preview */}
+                      <div className="relative h-64 bg-background overflow-hidden">
+                        <iframe
+                          src={project.url}
+                          className="w-full h-full border-0 scale-[0.35] origin-top-left"
+                          style={{ width: '285.7%', height: '285.7%' }}
+                          title={`${project.title} Preview`}
+                          loading="lazy"
+                          sandbox="allow-same-origin allow-scripts"
+                        />
+                        {/* Fallback gradient overlay */}
+                        <div
+                          className={`absolute inset-0 bg-gradient-to-br ${project.color} opacity-10 group-hover:opacity-5 transition-opacity pointer-events-none`}
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </motion.div>
