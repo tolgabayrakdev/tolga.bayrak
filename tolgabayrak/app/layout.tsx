@@ -15,7 +15,9 @@ export const metadata: Metadata = {
   authors: [{ name: "Tolga Bayrak" }],
   creator: "Tolga Bayrak",
   icons: {
-    icon: "/favicon.svg",
+    icon: "/icon.svg",
+    shortcut: "/icon.svg",
+    apple: "/icon.svg",
   },
   openGraph: {
     type: "website",
@@ -71,7 +73,6 @@ export default function RootLayout({
         <meta name="theme-color" content="#0f172a" />
         <link rel="canonical" href="https://tolgabayrak.dev" />
         <meta name="google-site-verification" content="verification-code-here" />
-        <link rel="icon" href="/favicon.svg" />
       </head>
       <body className={`font-sans antialiased`}>
         {children}
