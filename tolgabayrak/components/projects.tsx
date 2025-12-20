@@ -12,14 +12,14 @@ const projects = [
     description:
       "Diyetisyenler için uzman danışan yönetim sistemi. Beslenme planları, takip metrikleri, raporlama ve otomatik bildirimler sunan tamamen yönetilen SaaS platformu.",
     longDescription:
-      "DiyetKa, modern diyetisyenlerin yazılım ihtiyaçlarını karşılamak için sıfırdan geliştirdim. Danışanların beslenme verilerini takip etme, özelleştirilmiş diyetler hazırlama, ilerleme raporlaması ve ödeme yönetimini tek platformda sağlıyor. Yüzlerce diyetisyen başarıyla kullanıyor.",
+      "DiyetKa, modern diyetisyenlerin yazılım ihtiyaçlarını karşılamak için sıfırdan geliştirdim. Danışanların beslenme verilerini takip etme, özelleştirilmiş diyetler hazırlama, ilerleme raporlaması ve ödeme yönetimini tek platformda sağlıyor. Ölçeklenebilir mimari ve modern teknolojilerle diyetisyenlerin iş akışlarını optimize etmek için tasarlandı.",
     stats: [
-      { label: "Aktif Kullanıcı", value: "500+" },
       { label: "Proje Türü", value: "SaaS" },
-      { label: "İş Etkisi", value: "Yüksek" },
+      { label: "Mimari", value: "Ölçeklenebilir" },
+      { label: "Durum", value: "Geliştirme" },
     ],
     url: "https://diyetka.com",
-    technologies: ["Next.js", "React", "PostgreSQL", "Stripe", "AWS", "Redis"],
+    technologies: ["Next.js", "React", "PostgreSQL", "iyzico", "AWS", "Express.js", "Cloudinary"],
     keywords: "SaaS yazılım geliştirme, sağlık teknolojisi, diyetisyen yazılımı",
     color: "from-emerald-500 to-teal-500",
   },
@@ -30,14 +30,14 @@ const projects = [
     description:
       "Profesyonel randevu yönetim yazılımı. Hizmet işletmeleri için kapsamlı randevu takibi, müşteri yönetimi, çalışan planlama ve ödeme entegrasyonu sunan modern platform.",
     longDescription:
-      "RandevuHazır, profesyonel randevu yönetim yazılımı olarak binlerce hizmet işletmesini dijitalleştirmek için tasarladığım web platformu. Otomatik randevu hatırlatmaları, gelişmiş müşteri CRM, çalışan yönetimi, SMS/Email entegrasyonu ve Stripe ödeme sistemi sunuyor. Profesyonel randevu yönetimi ile işletmeler operasyonel verimliliği %40 artırıyor.",
+      "RandevuHazır, profesyonel randevu yönetim yazılımı olarak hizmet işletmelerini dijitalleştirmek için tasarladığım web platformu. Otomatik randevu hatırlatmaları, gelişmiş müşteri CRM, çalışan yönetimi, SMS/Email entegrasyonu ve iyzico ödeme sistemi sunuyor. Hızlı kurulum ve kullanıcı dostu arayüzü ile işletmelerin operasyonel verimliliğini artırmayı hedefliyor.",
     stats: [
-      { label: "İşletme Müşterisi", value: "1000+" },
-      { label: "Ay Kurulumu", value: "<5 dak" },
-      { label: "Uptime", value: "99.9%" },
+      { label: "Kurulum Süresi", value: "<5 dak" },
+      { label: "Hedef Kitle", value: "Hizmet Sektörü" },
+      { label: "Durum", value: "Geliştirme" },
     ],
     url: "https://randevuhazir.com",
-    technologies: ["Next.js", "Node.js", "PostgreSQL", "Twilio", "Stripe"],
+    technologies: ["Next.js", "Node.js", "Express.js", "PostgreSQL", "NetGSM", "iyzico", "Cloudinary"],
     keywords: "Profesyonel randevu yönetim yazılımı, randevu takip sistemi, işletme yazılımı, hizmet sektörü",
     color: "from-blue-500 to-cyan-500",
   },
@@ -48,14 +48,14 @@ const projects = [
     description:
       "Pazarlama ve satış ekipleri için integrated CRM ve kampanya yönetim platformu. Müşteri takibi, satış pipeline'ı, email kampanyaları ve analitik bir arada.",
     longDescription:
-      "VunSpace, işletmelerin müşteri ilişkileri ve pazarlama kampanyalarını profesyonel şekilde yönetebilmesini sağlayan modern CRM platformu. Gelişmiş segmentasyon, otomatik kampanya yürütme, detaylı raporlama ve API entegrasyonları sunar. Ajanslar ve B2B şirketleri tarafından yoğun şekilde kullanılıyor.",
+      "VunSpace, işletmelerin müşteri ilişkileri ve pazarlama kampanyalarını profesyonel şekilde yönetebilmesini sağlayan modern CRM platformu. Gelişmiş segmentasyon, otomatik kampanya yürütme, detaylı raporlama ve API entegrasyonları sunar. Ölçeklenebilir altyapı ile ajanslar ve B2B şirketlerinin pazarlama operasyonlarını optimize etmek için tasarlandı.",
     stats: [
-      { label: "Kurumsal Müşteri", value: "100+" },
-      { label: "İşlenen Veri", value: "10M+" },
-      { label: "ROI Artışı", value: "3.5x" },
+      { label: "Hedef Kitle", value: "B2B & Ajanslar" },
+      { label: "Mimari", value: "Ölçeklenebilir" },
+      { label: "Durum", value: "Geliştirme" },
     ],
     url: "https://vunspace.com",
-    technologies: ["React", "Node.js", "PostgreSQL", "Redis", "Elasticsearch", "AWS"],
+    technologies: ["React", "Node.js", "Express.js", "PostgreSQL", "AWS", "Cloudinary"],
     keywords: "CRM yazılımı, pazarlama otomasyonu, dijital varlık yönetimi",
     color: "from-violet-500 to-purple-500",
   },
