@@ -59,6 +59,24 @@ const projects = [
     keywords: "CRM yazılımı, pazarlama otomasyonu, dijital varlık yönetimi",
     color: "from-violet-500 to-purple-500",
   },
+  {
+    id: 4,
+    title: "Teslim Onay",
+    subtitle: "Resmi İş Teslim Onayı SaaS Platformu",
+    description:
+      "Freelancer'lar, ajanslar ve hizmet sağlayıcılar için müşterilerinden resmi iş teslim onayı almalarını sağlayan SaaS platformu. Madde bazlı onay sistemi, otomatik bildirimler ve kayıt altında tutma.",
+    longDescription:
+      "Teslim Onay, freelancer'lar ve ajansların iş teslimlerinde yaşadığı 'almadım', 'öyle demedim' gibi sorunları çözmek için geliştirdiğim SaaS platformu. Kullanıcılar işlerini madde madde tanımlayıp müşteriye özel link gönderir, müşteri her maddeyi tek tek işaretleyip onaylar. Tüm süreç kayıt altında tutulur - tarih, saat, IP adresi dahil. Snapshot sistemi ile teslim anı dondurulur, güvenli token ile tek kullanımlık onay linkleri oluşturulur. Email ve SMS bildirimleri, PDF sertifika export, yanıt geçmişi takibi ve tekrar gönderim özellikleri sunar.",
+    stats: [
+      { label: "Hedef Kitle", value: "Freelancer & Ajanslar" },
+      { label: "Proje Türü", value: "SaaS" },
+      { label: "Durum", value: "Geliştirme" },
+    ],
+    url: "https://onayteslim.com",
+    technologies: ["React", "TypeScript", "Vite", "Node.js", "Express.js", "PostgreSQL", "JWT", "Nodemailer", "NetGSM", "Tailwind CSS", "shadcn/ui"],
+    keywords: "iş teslim onayı, freelancer yazılımı, teslim onay platformu, resmi onay kaydı, müşteri onay sistemi",
+    color: "from-orange-500 to-red-500",
+  },
 ]
 
 export function Projects() {
