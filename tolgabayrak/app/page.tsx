@@ -7,24 +7,25 @@ import { Projects } from "@/components/projects"
 import { Contact } from "@/components/contact"
 
 export const metadata: Metadata = {
-  title: "Tolga Bayrak - Yazılım Geliştirme Uzmanı | SaaS ve Web Uygulamaları",
+  title: "Tolga Bayrak - Yazılım Mühendisi | Full-Stack Developer",
   description:
-    "Tolga Bayrak - Giresun'da Web, Mobil, SaaS yazılım geliştirme. Next.js, React, Node.js, PostgreSQL. Kurumsal dijital çözümler ve özel yazılım geliştirme hizmetleri.",
+    "Tolga Bayrak — Node.js, TypeScript, React, Next.js, Java Spring Boot ve Python FastAPI ile full-stack web uygulamaları geliştiren yazılım mühendisi.",
   keywords: [
-    "Giresun yazılım geliştirme",
-    "yazılım uzmanı Giresun",
-    "web yazılım geliştirme hizmeti",
-    "mobil uygulama geliştirme",
-    "SaaS yazılım geliştirme",
-    "özel yazılım çözümleri",
-    "Giresun freelance yazılım uzmanı",
-    "Next.js developer",
-    "React developer",
-    "Node.js geliştirme",
+    "Tolga Bayrak",
+    "yazılım mühendisi",
+    "full-stack developer",
+    "Node.js TypeScript developer",
+    "React Next.js developer",
+    "Java Spring Boot",
+    "Python FastAPI Flask",
+    "PostgreSQL geliştirici",
+    "backend developer Türkiye",
+    "full-stack geliştirici",
   ].join(", "),
   openGraph: {
-    title: "Tolga Bayrak - Yazılım Geliştirme Uzmanı",
-    description: "Kurumsal dijital çözümler, SaaS platformları ve modern web uygulamaları geliştiriyorum.",
+    title: "Tolga Bayrak - Yazılım Mühendisi | Full-Stack Developer",
+    description:
+      "Node.js, TypeScript, React, Next.js, Java Spring Boot ve Python FastAPI ile ölçeklenebilir full-stack uygulamalar geliştiriyorum.",
     type: "website",
     url: "https://tolgabayrak.vercel.app",
   },

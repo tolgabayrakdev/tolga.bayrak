@@ -36,7 +36,7 @@ export function About() {
           className="mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4">Hakkımda</h2>
-          <p className="text-lg text-muted-foreground">Yazılım Geliştirme Uzmanı & Girişimci</p>
+          <p className="text-lg text-muted-foreground">Full-Stack Yazılım Mühendisi</p>
         </motion.div>
 
         <motion.div
@@ -48,42 +48,42 @@ export function About() {
         >
           <motion.div variants={itemVariants} className="space-y-6">
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Merhaba! Ben Tolga Bayrak. Giresun'dan yazılım geliştirme dünyasına katkı sunmak ve işletmeleri dijital
-              dönüşüme yardımcı olmak konusunda tutkulu bir yazılım uzmanıyım.
+              Merhaba! Ben Tolga Bayrak. Yazılım geliştirmeye tutkuyla bağlı, full-stack odaklı bir yazılım
+              mühendisiyim. Temiz, okunabilir ve sürdürülebilir kod yazmayı her şeyden önce tutuyorum.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Web uygulamaları, mobil uygulamalar, ve SaaS platformları geliştirmede uzmanlaşmışım. Modern teknolojiler
-              (Node.js, React, Next.js, PostgreSQL) kullanarak ölçeklenebilir ve güvenli yazılım çözümleri sunuyorum.
+              Backend tarafında Node.js, TypeScript, Express.js ve PostgreSQL ile sağlam API'ler ve servisler inşa
+              ediyorum. Java ekosisteminde Spring Boot, Python tarafında ise Flask ve FastAPI ile de aktif çalışıyorum.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              KOBİ'ler, işletmeler ve girişimcilere yönelik danışmanlık hizmetleri veriyorum. Teknoloji sadece kod
-              değil, işletmeye gerçek değer katmak için stratejik çözümler geliştiriyorum.
+              Frontend'de React.js ve Next.js kullanarak modern, performanslı kullanıcı arayüzleri oluşturuyorum.
+              Kendi projelerimi sıfırdan tasarlayıp geliştiriyorum; her katmanda söz sahibi olmayı seviyorum.
             </p>
           </motion.div>
 
           <motion.div variants={itemVariants} className="space-y-8">
             <div className="bg-card border border-border rounded-lg p-6 hover:border-primary/50 transition-colors">
-              <h3 className="text-xl font-bold mb-3 text-accent">Uzmanlık Alanları</h3>
+              <h3 className="text-xl font-bold mb-3 text-accent">İlgi Alanları</h3>
               <ul className="space-y-2 text-muted-foreground">
                 <li className="flex items-center gap-2">
                   <span className="w-1.5 h-1.5 bg-accent rounded-full"></span>
-                  Full-Stack Web Uygulamaları
+                  Full-Stack Web Geliştirme
                 </li>
                 <li className="flex items-center gap-2">
                   <span className="w-1.5 h-1.5 bg-accent rounded-full"></span>
-                  Mobil Uygulama Geliştirme
+                  RESTful API & Microservices Tasarımı
                 </li>
                 <li className="flex items-center gap-2">
                   <span className="w-1.5 h-1.5 bg-accent rounded-full"></span>
-                  SaaS Platform Tasarımı
+                  Veritabanı Modelleme (PostgreSQL)
                 </li>
                 <li className="flex items-center gap-2">
                   <span className="w-1.5 h-1.5 bg-accent rounded-full"></span>
-                  API & Microservices Mimarisi
+                  Sistem Mimarisi & Ölçeklenebilirlik
                 </li>
                 <li className="flex items-center gap-2">
                   <span className="w-1.5 h-1.5 bg-accent rounded-full"></span>
-                  Bulut Tabanlı Çözümler (AWS, Docker)
+                  Docker & Bulut Altyapısı (AWS)
                 </li>
               </ul>
             </div>
@@ -91,13 +91,17 @@ export function About() {
             <div className="bg-card border border-border rounded-lg p-6 hover:border-primary/50 transition-colors">
               <h3 className="text-xl font-bold mb-3 text-accent">Teknoloji Stack</h3>
               <div className="flex flex-wrap gap-2">
-                {["Node.js", "Express.js", "Next.js", "React.js", "PostgreSQL", "Redis", "Docker", "AWS"].map(
-                  (tech) => (
-                    <span key={tech} className="tech-badge">
-                      {tech}
-                    </span>
-                  ),
-                )}
+                {[
+                  "Node.js", "TypeScript", "Express.js", "PostgreSQL",
+                  "React.js", "Next.js",
+                  "Java", "Spring Boot",
+                  "Python", "Flask", "FastAPI",
+                  "Docker", "AWS",
+                ].map((tech) => (
+                  <span key={tech} className="tech-badge">
+                    {tech}
+                  </span>
+                ))}
               </div>
             </div>
           </motion.div>

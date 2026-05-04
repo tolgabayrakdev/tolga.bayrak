@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { ArrowRight, Code2, Zap } from "lucide-react"
+import { ArrowRight, Code2, Zap, Github } from "lucide-react"
 import { MeteorBackground } from "./meteor-background"
 
 export function Hero() {
@@ -23,9 +23,9 @@ export function Hero() {
           transition={{ duration: 0.6, delay: 0.1 }}
           className="text-5xl md:text-7xl font-bold leading-tight"
         >
-          <span className="gradient-text">Modern Yazılım Çözümleri</span>
+          <span className="gradient-text">Merhaba, Ben Tolga</span>
           <br />
-          <span className="text-foreground">Giresun'dan Dünyaya</span>
+          <span className="text-foreground">Yazılım Mühendisi</span>
         </motion.h1>
 
         <motion.p
@@ -34,8 +34,8 @@ export function Hero() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed"
         >
-          Web, mobil ve SaaS uygulamaları geliştirerek işletmeleri dijitalleştiriyorum. Node.js, React, Next.js ve
-          modern mimarilerle kurumsal çözümler sunuyorum.
+          Full-stack yazılım geliştirme tutkunu. Node.js, TypeScript, React, Next.js, Java ve Python ile
+          ölçeklenebilir, temiz ve sürdürülebilir uygulamalar inşa ediyorum.
         </motion.p>
 
         <motion.div
@@ -48,13 +48,22 @@ export function Hero() {
             href="#projects"
             className="bg-primary text-white px-8 py-3 rounded-lg font-medium hover:bg-primary-dark transition-colors flex items-center gap-2"
           >
-            Projelerime Bakın <ArrowRight size={18} />
+            Projelerime Bak <ArrowRight size={18} />
+          </a>
+          <a
+            href="https://github.com/tolgabayrakdev"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 border border-border text-foreground px-8 py-3 rounded-lg font-medium hover:bg-muted hover:border-primary/50 transition-colors"
+          >
+            <Github size={20} />
+            github.com/tolgabayrakdev
           </a>
           <a
             href="#contact"
             className="border border-border text-foreground px-8 py-3 rounded-lg font-medium hover:bg-muted transition-colors"
           >
-            İletişime Geçin
+            İletişime Geç
           </a>
         </motion.div>
 
@@ -66,11 +75,11 @@ export function Hero() {
         >
           <div className="flex items-center gap-2">
             <Code2 size={18} className="text-accent" />
-            <span>5+ Yıl Deneyim</span>
+            <span>Full-Stack Geliştirme</span>
           </div>
           <div className="flex items-center gap-2">
             <Zap size={18} className="text-accent" />
-            <span>50+ Başarılı Proje</span>
+            <span>Backend & Frontend</span>
           </div>
         </motion.div>
       </motion.div>

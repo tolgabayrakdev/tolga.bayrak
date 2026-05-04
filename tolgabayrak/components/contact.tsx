@@ -2,13 +2,14 @@
 
 import { motion } from "framer-motion"
 import { useInView } from "react-intersection-observer"
-import { Mail, Phone, MapPin } from "lucide-react"
+import { Mail, Phone, MapPin, Github } from "lucide-react"
 
 export function Contact() {
   const { ref, inView } = useInView({ threshold: 0.3, triggerOnce: true })
 
   const socials = [
     { icon: Mail, label: "Email", value: "bayraktolga28@gmail.com", href: "mailto:bayraktolga28@gmail.com" },
+    { icon: Github, label: "GitHub", value: "github.com/tolgabayrakdev", href: "https://github.com/tolgabayrakdev" },
     { icon: Phone, label: "Telefon", value: "0537 985 44 87", href: "tel:+905379854487" },
     { icon: MapPin, label: "Konum", value: "Giresun, Türkiye", href: "#" },
   ]
@@ -21,9 +22,9 @@ export function Contact() {
           animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.5 }}
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">Proje Başlatmak İçin Hazır Mısınız?</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4">İletişime Geçin</h2>
           <p className="text-lg text-muted-foreground">
-            Yeni bir proje, danışmanlık veya işbirliği için benimle iletişime geçin.
+            Bir proje fikriniz mi var, ya da sadece merhaba demek mi istiyorsunuz? Her zaman açığım.
           </p>
         </motion.div>
 
@@ -31,7 +32,7 @@ export function Contact() {
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.5, delay: 0.1 }}
-          className="grid md:grid-cols-3 gap-6 max-w-2xl mx-auto"
+          className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-4xl mx-auto"
         >
           {socials.map((social, idx) => {
             const Icon = social.icon
@@ -68,9 +69,9 @@ export function Contact() {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="pt-12 border-t border-border"
         >
-          <p className="text-muted-foreground mb-6">© 2025 Tolga Bayrak. Tüm hakları saklıdır. | Giresun, Türkiye</p>
+          <p className="text-muted-foreground mb-6">© 2025 Tolga Bayrak. Tüm hakları saklıdır.</p>
           <p className="text-sm text-muted-foreground">
-            Yazılım Geliştirme Uzmanı | SaaS Mimarı | Full-Stack Developer
+            Yazılım Mühendisi | Full-Stack Developer
           </p>
         </motion.div>
       </div>

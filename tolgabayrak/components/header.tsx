@@ -6,7 +6,7 @@ import { useState } from "react"
 
 const navItems = [
   { label: "Hakkında", href: "#about" },
-  { label: "Hizmetler", href: "#services" },
+  { label: "Beceriler", href: "#skills" },
   { label: "Projeler", href: "#projects" },
   { label: "İletişim", href: "#contact" },
 ]
@@ -55,7 +55,7 @@ export function Header() {
             href="#contact"
             className="bg-primary text-white px-4 md:px-6 py-2 rounded-lg text-xs md:text-sm font-medium hover:bg-primary-dark transition-colors whitespace-nowrap"
           >
-            Proje Başlatın
+            İletişim
           </motion.a>
 
           {/* Mobile Menu Button */}

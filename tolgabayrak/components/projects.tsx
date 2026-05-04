@@ -16,7 +16,6 @@ const projects = [
     stats: [
       { label: "Proje Türü", value: "SaaS" },
       { label: "Mimari", value: "Ölçeklenebilir" },
-      { label: "Durum", value: "Geliştirme" },
     ],
     url: "https://diyetka.com",
     technologies: ["Next.js", "React", "PostgreSQL", "iyzico", "AWS", "Express.js", "Cloudinary"],
@@ -34,7 +33,6 @@ const projects = [
     stats: [
       { label: "Kurulum Süresi", value: "<5 dak" },
       { label: "Hedef Kitle", value: "Hizmet Sektörü" },
-      { label: "Durum", value: "Geliştirme" },
     ],
     url: "https://randevuhazir.com",
     technologies: ["Next.js", "Node.js", "Express.js", "PostgreSQL", "NetGSM", "iyzico", "Cloudinary"],
@@ -52,7 +50,6 @@ const projects = [
     stats: [
       { label: "Hedef Kitle", value: "B2B & Ajanslar" },
       { label: "Mimari", value: "Ölçeklenebilir" },
-      { label: "Durum", value: "Geliştirme" },
     ],
     url: "https://vunspace.com",
     technologies: ["React", "Node.js", "Express.js", "PostgreSQL", "AWS", "Cloudinary"],
@@ -61,6 +58,23 @@ const projects = [
   },
   {
     id: 4,
+    title: "VunQR",
+    subtitle: "Kişisel veya Kurumsal Dijital İletişim Platformu",
+    description:
+      "QR kodlar, WiFi paylaşımı, e-posta ve SMS gönderimi, vCard yönetimi, PDF menü, Link in Bio ve Google Yorum gibi gelişmiş özelliklerle dijital iletişimi güçlendiren all-in-one platform.",
+    longDescription:
+      "VunQR, kişisel veya kurumsal kullanım için dijital iletişimin akıllı yolunu sunuyor. Dinamik QR kod oluşturma ve yönetimi, tek tıkla WiFi paylaşımı, e-posta ve SMS gönderimi, dijital kartvizit (vCard), restoran ve kafe için PDF menü, Link in Bio sayfası ve Google Yorum yönlendirme gibi özellikleri tek çatı altında topluyor. Hem bireysel kullanıcılar hem de kurumsal ekipler için ölçeklenebilir bir altyapı üzerine inşa edildi.",
+    stats: [
+      { label: "Hedef Kitle", value: "Bireysel & Kurumsal" },
+      { label: "Proje Türü", value: "SaaS" },
+    ],
+    url: "https://www.vunqr.com",
+    technologies: ["React", "TypeScript", "Node.js", "Express.js", "PostgreSQL", "AWS", "Cloudinary", "NetGSM", "Nodemailer"],
+    keywords: "QR kod oluşturma, dijital kartvizit, link in bio, vCard, WiFi QR, Google yorum QR",
+    color: "from-sky-500 to-indigo-500",
+  },
+  {
+    id: 5,
     title: "Teslim Onay",
     subtitle: "Resmi İş Teslim Onayı SaaS Platformu",
     description:
@@ -70,7 +84,6 @@ const projects = [
     stats: [
       { label: "Hedef Kitle", value: "Freelancer & Ajanslar" },
       { label: "Proje Türü", value: "SaaS" },
-      { label: "Durum", value: "Geliştirme" },
     ],
     url: "https://onayteslim.com",
     technologies: ["React", "TypeScript", "Vite", "Node.js", "Express.js", "PostgreSQL", "JWT", "Nodemailer", "NetGSM", "Tailwind CSS", "shadcn/ui"],
@@ -93,9 +106,9 @@ export function Projects() {
           transition={{ duration: 0.5 }}
           className="mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">Başarı Projeleri</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4">Projelerim</h2>
           <p className="text-lg text-muted-foreground">
-            5 yıllık deneyimim boyunca gerçek müşteriler için geliştirdiğim SaaS ve işletme yazılımları
+            Sıfırdan tasarlayıp geliştirdiğim projeler
           </p>
         </motion.div>
 
@@ -131,8 +144,6 @@ export function Projects() {
                       </span>
                     ))}
                   </div>
-
-                  <p className="text-xs text-muted-foreground border-t border-border pt-4">SEO: {project.keywords}</p>
 
                   <div className="flex gap-3 pt-4">
                     <a
